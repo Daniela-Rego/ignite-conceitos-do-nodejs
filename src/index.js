@@ -44,7 +44,7 @@ app.post('/users', (request, response) => {
       todos: []
     }
     users.push(user);
-    return response.status(201).json(users); 
+    return response.status(201).json(user); 
 });
 
 app.get('/todos', checksExistsUserAccount, (request, response) => {
